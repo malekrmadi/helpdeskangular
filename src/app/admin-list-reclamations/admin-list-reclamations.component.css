@@ -1,0 +1,102 @@
+.reclamations-list {
+  max-width: 1100px;
+  margin: 2rem auto;
+  background: rgba(20, 24, 48, 0.95);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.25), 0 0 80px 0 #3a3a7c44;
+  padding: 2.5rem 2rem 2rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+h3 {
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  font-weight: 800;
+  color: #ffb347;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px #1a1a2e, 0 0 16px #ffb34788;
+  z-index: 1;
+  position: relative;
+  animation: glowTitle 2.5s infinite alternate;
+}
+@keyframes glowTitle {
+  0% { text-shadow: 0 2px 8px #1a1a2e, 0 0 8px #ffb34744; }
+  100% { text-shadow: 0 2px 8px #1a1a2e, 0 0 24px #ffb347cc; }
+}
+.filters-bar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  z-index: 1;
+  position: relative;
+}
+.filters-bar input, .filters-bar select {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #3a3a7c;
+  background: #181c2b;
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  outline: none;
+  box-shadow: 0 1px 6px #1a1a2e22;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.filters-bar input:focus, .filters-bar select:focus {
+  border: 1.5px solid #ffb347;
+  box-shadow: 0 0 8px #ffb34744;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  background: rgba(24, 28, 43, 0.98);
+  box-shadow: 0 2px 16px #1a1a2e33;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+th, td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+}
+th {
+  background: linear-gradient(90deg, #3a3a7c 0%, #ffb347 100%);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ffb347;
+}
+tbody tr {
+  border-bottom: 1px solid #3a3a7c44;
+  transition: background 0.2s;
+}
+tbody tr:hover {
+  background: #2c5364cc;
+  box-shadow: 0 0 16px 2px #ffb34755, 0 0 32px 4px #3a3a7c33;
+  position: relative;
+  z-index: 2;
+}
+td {
+  color: #fff;
+  font-size: 1rem;
+}
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.3rem;
+  padding: 0.3rem;
+  border-radius: 50%;
+  transition: background 0.2s;
+  vertical-align: middle;
+}
+.icon-btn:hover {
+  background: #ffb34733;
+}
+.material-icons {
+  font-size: 1.3rem;
+  color: #ffb347;
+}

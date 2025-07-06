@@ -1,0 +1,43 @@
+<div class="reclamations-list">
+  <h3>Liste des Réclamations</h3>
+  <div class="filters-bar">
+    <input type="text" placeholder="Recherche..." [(ngModel)]="filterText" />
+    <select [(ngModel)]="filterUser">
+      <option value="">Tous utilisateurs</option>
+      <option *ngFor="let u of users">{{ u }}</option>
+    </select>
+    <select [(ngModel)]="filterStatut">
+      <option value="">Tous statuts</option>
+      <option *ngFor="let s of statuts">{{ s }}</option>
+    </select>
+    <input type="date" [(ngModel)]="filterDate" />
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Utilisateur</th>
+        <th>Motif</th>
+        <th>Feature</th>
+        <th>Statut</th>
+        <th>Description</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let r of filteredReclamations()">
+        <td>{{ r.date }}</td>
+        <td>{{ r.user }}</td>
+        <td>{{ r.motif }}</td>
+        <td>{{ r.feature }}</td>
+        <td>{{ r.statut }}</td>
+        <td>{{ r.description }}</td>
+        <td>
+          <button class="icon-btn" (click)="viewReclamation(r)"><span class="material-icons">visibility</span></button>
+          <button class="icon-btn" (click)="transferReclamation(r)"><span class="material-icons">swap_horiz</span></button>
+          <button class="icon-btn" (click)="archiveReclamation(r)"><span class="material-icons">archive</span></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

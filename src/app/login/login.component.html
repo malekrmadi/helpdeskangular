@@ -1,0 +1,63 @@
+<div class="login-page">
+  <div class="login-container">
+    <div class="login-header">
+      <button class="back-btn" (click)="onBackToHome()">
+        <i class="fas fa-arrow-left"></i> Retour à l'accueil
+      </button>
+      <h2>Connexion à HelpDesk Pro</h2>
+      <p>Connectez-vous à votre espace client ou administrateur</p>
+    </div>
+    
+    <form (ngSubmit)="onSubmit()" class="login-form">
+      <div class="form-group">
+        <label for="email">Email ou nom d'utilisateur</label>
+        <input 
+          type="text" 
+          id="email" 
+          name="email" 
+          [(ngModel)]="email" 
+          required 
+          placeholder="Entrez votre email ou nom d'utilisateur"
+          [disabled]="isLoading"
+        >
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          [(ngModel)]="password" 
+          required 
+          placeholder="Entrez votre mot de passe"
+          [disabled]="isLoading"
+        >
+      </div>
+      
+      <button type="submit" class="login-btn" [disabled]="isLoading">
+        <span *ngIf="!isLoading">Se connecter</span>
+        <span *ngIf="isLoading">Connexion en cours...</span>
+      </button>
+      
+      <div *ngIf="error" class="error-message">
+        <i class="fas fa-exclamation-triangle"></i>
+        {{ error }}
+      </div>
+    </form>
+    
+    <div class="login-info">
+      <div class="info-card">
+        <h4>Identifiants de test</h4>
+        <div class="credentials">
+          <div class="credential">
+            <strong>Client:</strong> user1 / 1
+          </div>
+          <div class="credential">
+            <strong>Admin:</strong> admin1 / 1
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

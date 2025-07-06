@@ -1,0 +1,293 @@
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo">
+        <h2>HelpDesk Pro</h2>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Fonctionnalités</a>
+        <a href="#pricing">Tarifs</a>
+        <a href="#about">À propos</a>
+        <button class="login-btn" (click)="onLoginClick()">Se connecter</button>
+      </div>
+    </nav>
+    
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Améliorez votre HelpDesk avec notre solution intelligente</h1>
+        <p>Plateforme de gestion de tickets intelligente dédiée aux entreprises SaaS. Optimisez votre support client et améliorez la satisfaction de vos utilisateurs.</p>
+        <div class="hero-buttons">
+          <button class="cta-btn primary" (click)="onLoginClick()">Commencer maintenant</button>
+          <button class="cta-btn secondary">Voir la démo</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="placeholder-image">
+          <i class="fas fa-headset"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="features">
+  <div class="container">
+    <div class="section-header">
+      <h2>Fonctionnalités principales</h2>
+      <p>Découvrez pourquoi les entreprises SaaS choisissent notre solution</p>
+    </div>
+    
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-robot"></i>
+        </div>
+        <h3>Chatbot Intelligent</h3>
+        <p>Répondez automatiquement aux questions fréquentes et réduisez la charge de travail de votre équipe support.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-ticket-alt"></i>
+        </div>
+        <h3>Gestion de tickets avancée</h3>
+        <p>Créez, suivez et gérez vos tickets de support avec une interface intuitive et des outils puissants.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3>Analytics en temps réel</h3>
+        <p>Suivez les performances de votre support avec des tableaux de bord détaillés et des rapports personnalisés.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3>Gestion d'équipe</h3>
+        <p>Attribuez des tickets, gérez les rôles et optimisez la collaboration entre vos agents de support.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>Interface responsive</h3>
+        <p>Accédez à votre helpdesk depuis n'importe quel appareil avec notre interface adaptative.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3>Sécurité renforcée</h3>
+        <p>Vos données sont protégées avec les dernières technologies de sécurité et de chiffrement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="pricing">
+  <div class="container">
+    <div class="section-header">
+      <h2>Tarifs transparents</h2>
+      <p>Choisissez le plan qui correspond à vos besoins</p>
+    </div>
+    
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3>Starter</h3>
+          <div class="price">
+            <span class="currency">€</span>
+            <span class="amount">29</span>
+            <span class="period">/mois</span>
+          </div>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i> Jusqu'à 5 agents</li>
+          <li><i class="fas fa-check"></i> 1000 tickets/mois</li>
+          <li><i class="fas fa-check"></i> Chatbot basique</li>
+          <li><i class="fas fa-check"></i> Support email</li>
+          <li><i class="fas fa-check"></i> Rapports de base</li>
+        </ul>
+        <button class="pricing-btn">Commencer</button>
+      </div>
+      
+      <div class="pricing-card featured">
+        <div class="pricing-header">
+          <h3>Professional</h3>
+          <div class="price">
+            <span class="currency">€</span>
+            <span class="amount">79</span>
+            <span class="period">/mois</span>
+          </div>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i> Jusqu'à 20 agents</li>
+          <li><i class="fas fa-check"></i> Tickets illimités</li>
+          <li><i class="fas fa-check"></i> Chatbot avancé</li>
+          <li><i class="fas fa-check"></i> Support prioritaire</li>
+          <li><i class="fas fa-check"></i> Analytics avancés</li>
+          <li><i class="fas fa-check"></i> Intégrations API</li>
+        </ul>
+        <button class="pricing-btn featured">Commencer</button>
+      </div>
+      
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <h3>Enterprise</h3>
+          <div class="price">
+            <span class="currency">€</span>
+            <span class="amount">199</span>
+            <span class="period">/mois</span>
+          </div>
+        </div>
+        <ul class="pricing-features">
+          <li><i class="fas fa-check"></i> Agents illimités</li>
+          <li><i class="fas fa-check"></i> Toutes les fonctionnalités</li>
+          <li><i class="fas fa-check"></i> Support dédié</li>
+          <li><i class="fas fa-check"></i> SLA personnalisé</li>
+          <li><i class="fas fa-check"></i> Formation incluse</li>
+          <li><i class="fas fa-check"></i> Déploiement sur site</li>
+        </ul>
+        <button class="pricing-btn">Contacter</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>À propos de HelpDesk Pro</h2>
+        <p>HelpDesk Pro est une solution complète de gestion de tickets conçue spécifiquement pour les entreprises SaaS. Notre plateforme combine intelligence artificielle et outils de gestion traditionnels pour offrir une expérience support exceptionnelle.</p>
+        <p>Fondée par des experts du support client, notre mission est d'aider les entreprises à améliorer leur satisfaction client tout en optimisant leurs coûts opérationnels.</p>
+        <div class="stats">
+          <div class="stat">
+            <h3>500+</h3>
+            <p>Entreprises satisfaites</p>
+          </div>
+          <div class="stat">
+            <h3>1M+</h3>
+            <p>Tickets traités</p>
+          </div>
+          <div class="stat">
+            <h3>99.9%</h3>
+            <p>Temps de disponibilité</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-image">
+        <div class="placeholder-image">
+          <i class="fas fa-building"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Audit Form Section -->
+<section class="audit-form">
+  <div class="container">
+    <div class="form-content">
+      <div class="form-text">
+        <h2>Réservez une réunion d'audit gratuite</h2>
+        <p>Nos experts analyseront votre processus de support actuel et vous proposeront des recommandations personnalisées pour améliorer votre helpdesk.</p>
+        <ul class="benefits">
+          <li><i class="fas fa-check"></i> Audit complet de 30 minutes</li>
+          <li><i class="fas fa-check"></i> Recommandations personnalisées</li>
+          <li><i class="fas fa-check"></i> Démonstration de la plateforme</li>
+          <li><i class="fas fa-check"></i> Devis personnalisé</li>
+        </ul>
+      </div>
+      
+      <form class="audit-form-container" (ngSubmit)="onSubmitAudit()">
+        <div class="form-group">
+          <label for="name">Nom complet *</label>
+          <input type="text" id="name" [(ngModel)]="auditForm.name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email professionnel *</label>
+          <input type="email" id="email" [(ngModel)]="auditForm.email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="company">Entreprise *</label>
+          <input type="text" id="company" [(ngModel)]="auditForm.company" name="company" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Téléphone</label>
+          <input type="tel" id="phone" [(ngModel)]="auditForm.phone" name="phone">
+        </div>
+        
+        <button type="submit" class="submit-btn">Réserver mon audit gratuit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>HelpDesk Pro</h3>
+        <p>La solution intelligente pour améliorer votre support client.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Produit</h4>
+        <ul>
+          <li><a href="#features">Fonctionnalités</a></li>
+          <li><a href="#pricing">Tarifs</a></li>
+          <li><a href="#">Intégrations</a></li>
+          <li><a href="#">API</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Centre d'aide</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Statut</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Carrières</a></li>
+          <li><a href="#">Presse</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 HelpDesk Pro. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="#">Confidentialité</a>
+        <a href="#">Conditions d'utilisation</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer> 

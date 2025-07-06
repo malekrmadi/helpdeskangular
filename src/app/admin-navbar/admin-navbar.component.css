@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  gap: 2rem;
+  background: rgba(24, 28, 43, 0.85);
+  padding: 1.2rem 2rem;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 2px 16px #3a3a7c55;
+  backdrop-filter: blur(4px);
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.navbar-planet {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+  animation: rotatePlanet 8s linear infinite;
+  filter: drop-shadow(0 0 8px #ffb34788);
+}
+.navbar-planet .material-icons {
+  font-size: 2.2rem;
+  color: #ffb347;
+  text-shadow: 0 0 12px #ffb34788;
+}
+@keyframes rotatePlanet {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.navbar a {
+  color: #ffb347;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  letter-spacing: 1px;
+}
+.navbar a.active, .navbar a:hover {
+  background: linear-gradient(90deg, #3a3a7c 0%, #ffb347 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px #ffb34733;
+}
